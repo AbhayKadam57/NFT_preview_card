@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+
+}
+body{
+
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.2;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    
+}
+
+img{
+
+    width: 100%;
+    border-radius: 2%;
+}
+
+.image{
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+
+}
+
+.hidden{
+
+
+    width: 30px;
+    height: 30px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    right:50%;
+    bottom: 65%;
+  
+}
+div :hover .image{
+
+    opacity: 0.3;
+    background-color: rgba(255,255,255,0.8);
+}
+div :hover .hidden{
+
+    opacity: 1;
+    
+}
+
+#overlay {
+
+
+    background-color: #00b4d8; 
+    z-index: 1; 
+    cursor: pointer; 
+    border-radius: 10px;
+  }
+
+  .post-content h5:hover{
+    color:#00b4d8 ;
+    cursor: pointer;
+
+  }
+
+
+  .post-heading:hover{
+
+        color:#00b4d8 ;
+  }
+
+
+
+.bg-primary{
+
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+  
+}
+
+.bg-secondary{
+
+  background-color: hsl(216, 50%, 16%);
+}
+
+.card{
+
+    color:white;
+    width:320px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 80px auto;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h3{
+
+    margin: 20px 0;
+}
+
+p{
+    color: hsl(215, 32%, 50%);
+    font-size: 15px;
+}
+.flex{
+
+    display: flex;
+    height: 50px;
+    margin: 10px 0;
+    justify-content: center;
+    
+   
+}
+.post-content .flex{
+
+justify-content: space-between;
+}
+
+
+.flex .eth-icon{
+
+    width: 10px;
+    height: 20px;
+}
+
+.flex .clock{
+
+    width:15px;
+    height: 15px;
+}
+
+.flex img{
+    margin-right: 5px;
+}
+
+.flex .h5{
+
+    margin-left: 20px;
+}
+.divider{
+
+    width:280px;
+    background-color: rgb(186, 188, 191,0.2);
+    height: 1px;
+    margin-top: 5px;
+}
+
+.creater img{
+
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+        
+}
+
+b{
+    font-weight: bold;
+    color: white;
+}
+
+b:hover{
+
+    color:#00b4d8 ;
+    cursor: pointer;
+
+}
+
+h6{
+    color: rgba(255,255,255,0.5);
+}
+
+div .creater{
+
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.creater p{
+
+    margin:5px;
+}
+
